@@ -5,10 +5,6 @@ SQL 是指结构化查询语言，全称”Structured Query Language“。是访
 - 数据查询语言（DQL：Data Query Language）：SELECT。
 
 
-<!-- - 事务处理语言（TPL）：BEGIN TRANSACTION、COMMIT、ROLLBACK。-->
-<!-- - 数据控制语言（DCL）-->
-<!-- - 指针控制语言（CCL）-->
-
 语法特点：
 - 总是以关键字开始并以";"结尾。
 - 不区分大小写。但是一般约定：
@@ -17,7 +13,6 @@ SQL 是指结构化查询语言，全称”Structured Query Language“。是访
 
 ***注意：SQL本身是标准的语言，但不同DBMS对其支持不同，而且多数对其还进行的扩展。在实际使用中还需注意。***
 
-<!-- more -->
 
 # 前置知识
 
