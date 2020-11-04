@@ -344,7 +344,7 @@ def logout_view(request):
 
 **用户和权限管理的主要数据库表如下：**
 
-![django 用户和权限管理的主要数据库表](https://s2.ax1x.com/2020/02/06/1yseIK.png)](https://imgchr.com/i/1yseIK)
+![django 用户和权限管理的主要数据库表](../images/django/auth-model.png)](https://imgchr.com/i/1yseIK)
 
 
 

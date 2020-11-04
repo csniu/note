@@ -32,7 +32,7 @@ Github 地址为： https://github.com/rabbitmq/rabbitmq-website
 
 ## 基础概览介绍
 
-![RabbitMQ 原理图](https://s2.ax1x.com/2020/02/06/1yslMd.png)
+![RabbitMQ 原理图](../images/RabbitMQ/RabbitMQ.png)
 
 1. Message 消息：由消息头和消息体组成，消息体是不透明的，消息头由一系列属性组成，如下：
    1. routing-key：路由键
@@ -148,7 +148,7 @@ channel.basic_publish(exchange='',
 
 1. direct：完全匹配、单播的模式
 
-   ![direct](https://s2.ax1x.com/2020/02/06/1ysGZt.png)
+   ![direct](../images/RabbitMQ/direct.png)
 
    消息中的路由键（routing key）如果和 Binding 中的 binding key 一致， 交换器就将消息发到对应的队列中。
 
@@ -156,13 +156,13 @@ channel.basic_publish(exchange='',
 
 2. fanout：广播模式
 
-   ![fanout](https://s2.ax1x.com/2020/02/06/1ys3qI.png)
+   ![fanout](../images/RabbitMQ/fanout.png)
 
    该模式会将接收的消息广播到所有绑定的消息队列中，而不会处理 routing-key。
 
 3. topic：模式匹配模式
 
-   ![topic](https://s2.ax1x.com/2020/02/06/1ysMxH.png)
+   ![topic](../images/RabbitMQ/topic.png)
 
    首先发送消息客户端的 routing-key 不能是随意的，必须是有点（“.”）分割的单词组成。
 

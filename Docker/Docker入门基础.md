@@ -7,7 +7,7 @@ Docker 就是一种流行的软件容器平台。底层基础也就是容器。
 基于 Linux 内核的 cgroup，namespace，以及 AUFS 类的 Union FS 等技术，对进程进行封装隔离。这个被隔离的进程就可以抽象化为**容器**。
 
 Docker 的架构图如下：
-[![docker 架构](https://s2.ax1x.com/2020/02/06/1ysnPO.md.png)](https://imgchr.com/i/1ysnPO)
+[![docker 架构](../images/docker/docker.png)](https://imgchr.com/i/1ysnPO)
 
 - 是一个C/S（客户端/服务端）架构。
 

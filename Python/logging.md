@@ -300,7 +300,7 @@ log = logging.getLogger(__name__)
 
 #### 六、logging日志流处理流程
 
-![logging日志流处理流程](https://s2.ax1x.com/2020/02/08/1Ra2T0.png)
+![logging日志流处理流程](../images/logging/logging.png)
 
 我们来描述下上面这个图的日志流处理流程：
 
