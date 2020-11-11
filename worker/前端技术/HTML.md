@@ -70,6 +70,8 @@ html 是具有语义性的，而css是表象的。
   |  | 标签 | 说明 | 示例 |
   |--|------|-----|------|
   |标题|`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`|应该最好只对每个页面使用一次`<h1>`,这是顶级标题，所有其他标题位于层次结构中的下方。| |
+  |段落|[`<p>`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p)| | |
+  | | `<span>` | 内联，不具有任何语言，仅当需要对其使用CSS时 | |
   |无序列表|`<ul>`| 默认每项前有一个原点,可以嵌套使用 | ```<ul><li>第一项</li></ul>``` |
   |有序列表|`<ol>`| 默认每项前有一个数字,可以嵌套使用 | ```<ol><li>第一项</li></ol>``` |
   | 强调 | `<em>` | **语义**强调，斜体 | `<p>I am <em>glad</em> you weren't <em>late</em>.</p>` |
@@ -77,4 +79,32 @@ html 是具有语义性的，而css是表象的。
   |斜体字、粗体字、下划线| `<b>`, `<i>`, 和 `<u>`| 只是表象元素，不具有语言，推荐使用css实现| |
 
 ## 超链接
+正是因为有超链接的存在，才使得互联网称为**互联**的网络。超链接可链接到**任何资源**（HTML、CSS、图片、音频、视频等等），也可以链接到文档的**指定部分**（锚点）。URL可以使用相对链接，也可以使绝对链接。如果浏览器不知道如何显示或处理文件，它会询问您是否要打开文件（需要选择合适的本地应用来打开或处理文件）或下载文件（以后处理它）。
 
+链接使用[`<a>`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#attr-href)标签包裹，可以是任何内容（包括块级内容）变成超链接。
+
+示例如下：
+```
+<a href="https://www.mozilla.org/zh-CN/">Mozilla 主页</a>
+
+# 标题仅当鼠标悬停在其上时才会显示
+<a href="https://www.mozilla.org/zh-CN/"  title="了解 Mozilla 使命以及如何参与贡献的最佳站点。">Mozilla 主页</a>  
+
+# 块级内容
+<a href="https://www.mozilla.org/zh-CN/"><img src="mozilla-image.png" alt="链接至 Mozilla 主页的 Mozilla 标志"></a>
+
+# 使用锚点定位到指定位置（链接到当前文档（html）的 id 为`Mailing_address` 的地方）
+<p>本页面底部可以找到 <a href="#Mailing_address">公司邮寄地址</a>。</p>
+```
+
+最佳实践：
+- 使用清晰的链接措辞。
+- 尽可能使用相对链接。（减少DNS查询）
+- 链接到非HTML资源时留下清晰的指示。如：`<p><a href="http://www.example.com/large-report.pdf">下载销售报告（PDF, 10MB）</a></p>`
+- 在下载链接时使用 download 属性，设置默认文件保存名。
+
+
+
+
+
+[HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
